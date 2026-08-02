@@ -6,7 +6,7 @@ while guess != secret_number:
     guess = int(input("Guess a number from 1 to 10: "))
 
     if guess < 1 or guess > 10:
-        print("Your guess muct be between 1 and 10.")
+        print("Your guess must be between 1 and 10.")
         continue
 
     attempts += 1
