@@ -38,6 +38,6 @@ for key, value in developer.items():
 
 # key doesn't exist
 #print(developer["favorite_food"])  ### KeyError
-print(developer.get("favorite_food"))  # returns "None"
+print(developer.get("favorite_food"))  # returns None which is a keyword in Python like Nothing in Visual Basic and null in C#
 print(developer.get("favorite_food", "Not specified")) # provide default, returns "Not specified"
 
