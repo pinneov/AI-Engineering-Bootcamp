@@ -23,7 +23,17 @@ class Developer:
             "skills": self.skills
         }
 
+    @classmethod
+    def from_dict(cls, data):
+        developer = cls(
+            data["name"],
+            data["experience"]
+        )
 
+        for skill in data["skills"]:
+            developer.add_skill(skill)
+
+        return developer
 
 developer1 = Developer("Alice", 5)
 developer2 = Developer("Bob", 10)
@@ -42,6 +52,16 @@ developer.display()
 
 data = developer.to_dict()
 print(data)
+
+data = {
+    "name": "Vincent",
+    "experience": 22,
+    "skills": ["C#", "Python"]
+}
+
+developer = Developer.from_dict(data)
+
+
 
 # Static typing is not enforced, but adding it helps tools:
 
