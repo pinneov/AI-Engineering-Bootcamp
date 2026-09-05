@@ -6,7 +6,7 @@ display_skills("C#", "Python", "SQL")
 # It makes a tuple
 # ('C#', 'Python', 'SQL')
 
-# tuple can be interated
+# tuple can be iterated
 def display_skills(*args):
     for skill in args:
         print(skill)
