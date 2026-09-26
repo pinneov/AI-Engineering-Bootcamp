@@ -104,7 +104,7 @@ skills = [
 
 ######################################################
 
-# Interators
+# Iterators
 
 numbers = [10, 20, 30]  # List is Iterable
 
